@@ -3,6 +3,17 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 const connectDB = require("./config/db");
 
+const cors = require("cors");
+
+app.use(cors({
+  origin: [
+    "http://localhost:5500",       // local frontend
+    "http://127.0.0.1:5500",
+    "https://fabbbb.netlify.app"   // NETLIFY DOMAIN
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"]
+}));
 
 
 
