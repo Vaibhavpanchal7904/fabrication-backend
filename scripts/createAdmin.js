@@ -4,12 +4,16 @@ const Admin = require("../models/Admin");
 
 dotenv.config();
 
+
+
+// 🔥 FORCE cloudinary to load
+require("./config/cloudinary");
 mongoose
   .connect(process.env.MONGO_URI)
   .then(async () => {
     console.log("MongoDB Connected for Admin Script ✅");
 
-    const email = "admin@fabricationworld.com";
+    const email = "nimeshpanchal@gmail.com";
     const password = "Admin@123";
 
     const exists = await Admin.findOne({ email });
