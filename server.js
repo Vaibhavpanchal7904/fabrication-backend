@@ -14,16 +14,13 @@ app.use(cors({
     "http://localhost:5500",
     "http://127.0.0.1:5500",
     "https://fabbbb.netlify.app",
-    app.use(cors({
-  origin: [
+  
     "https://durgafabrication.pages.dev",
     "https://fabrication-frontend.pages.dev"
   ],
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true
-}));
+ 
 
-  ],
+  
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"]
 }));
