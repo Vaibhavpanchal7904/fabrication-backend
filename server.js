@@ -21,9 +21,7 @@ app.use(cors({
   allowedHeaders: ["Content-Type", "Authorization"]
 }));
 
-// ✅ THIS LINE FIXES UPLOAD ISSUE
-app.options("*", cors());
-/* ====================================================== */
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
